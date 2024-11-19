@@ -17,3 +17,11 @@ Then you should have all the dependent ready in place. Then activate the environ
 $ pipenv shell
 $ flask --app main run
 ```
+
+## how to package it
+A docker file is provided here if you'd like to run it in a container environment.
+
+```
+$ pipenv requirements > requirements.txt
+$ docker build -t showcase_flask:latest .
+```
